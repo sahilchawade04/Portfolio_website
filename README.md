@@ -1,19 +1,19 @@
 # Portfolio_website
-    A responsive personal portfolio website built using HTML, CSS, and JavaScript.
-
+    A responsive personal portfolio website created with HTML, CSS, and JavaScript.
+    
 ### 🔗 Live Demo
 [Visit Portfolio](https://sahilchawade.vercel.app)
     
 ### ✨ Features
 
-- Fully **responsive** design using **Mobile-First** methodology  
-- Smooth **scroll animations** using Intersection Observer or AOS  
-- **Dark & Light mode** toggle  
-- Smooth scrolling navigation to each section  
-- **Email sending functionality** in the contact section (e.g., via EmailJS)  
-- Clean and **modern UI** with attention to accessibility  
-- Cross-browser compatibility  
-- Optimized for **mobile, tablet, and desktop** devices  
+-Responsive design with Mobile-First approach
+-Smooth scroll effects using Intersection Observer or AOS
+-Dark & Light mode switch
+-Smooth scrolling navigation to all sections
+-Email sending feature in the contact section (e.g., through EmailJS)
+-Clean and trendy UI with focus on accessibility
+-Cross-browser support
+-Mobile, tablet, and desktop optimized 
 
 ### 🛠️ Technologies Used
 
