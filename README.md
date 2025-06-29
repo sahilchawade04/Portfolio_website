@@ -2,7 +2,7 @@
     A responsive personal portfolio website built using HTML, CSS, and JavaScript.
 
 # Link
-    [Visit Portfolio](https://sahilchawade.vercel.app/)
+    <https://sahilchawade.vercel.app/>
     
 ### ✨ Features
 
