@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Github, Linkedin, ExternalLink, ArrowUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -151,7 +150,11 @@ const Contact = () => {
             className="bg-background/40 backdrop-blur-md rounded-2xl p-8 border border-cyan-500/20"
           >
             <h3 className="text-2xl font-bold text-cyan-400 mb-6">Send a Message</h3>
-            <form className="space-y-6">
+            <form
+              action="https://formspree.io/f/mblywoez"
+              method="POST"
+              className="space-y-6"
+            >
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-foreground/80 mb-2">
@@ -159,6 +162,8 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
+                    name="firstName"
+                    required
                     className="w-full px-4 py-3 bg-background/20 border border-cyan-500/20 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors duration-300 text-foreground"
                     placeholder="Your first name"
                   />
@@ -169,47 +174,59 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
+                    name="lastName"
+                    required
                     className="w-full px-4 py-3 bg-background/20 border border-cyan-500/20 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors duration-300 text-foreground"
                     placeholder="Your last name"
                   />
                 </div>
               </div>
+
               <div>
                 <label className="block text-sm font-medium text-foreground/80 mb-2">
                   Email
                 </label>
                 <input
                   type="email"
+                  name="email"
+                  required
                   className="w-full px-4 py-3 bg-background/20 border border-cyan-500/20 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors duration-300 text-foreground"
                   placeholder="your.email@example.com"
                 />
               </div>
+
               <div>
                 <label className="block text-sm font-medium text-foreground/80 mb-2">
                   Subject
                 </label>
                 <input
                   type="text"
+                  name="subject"
+                  required
                   className="w-full px-4 py-3 bg-background/20 border border-cyan-500/20 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors duration-300 text-foreground"
                   placeholder="What's this about?"
                 />
               </div>
+
               <div>
                 <label className="block text-sm font-medium text-foreground/80 mb-2">
                   Message
                 </label>
                 <textarea
+                  name="message"
                   rows={5}
+                  required
                   className="w-full px-4 py-3 bg-background/20 border border-cyan-500/20 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors duration-300 text-foreground resize-none"
                   placeholder="Your message here..."
                 ></textarea>
               </div>
-              <Button
+
+              <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-0 shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
+                className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-0 shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 py-3 px-6 rounded-lg"
               >
                 Send Message
-              </Button>
+              </button>
             </form>
           </motion.div>
         </div>
