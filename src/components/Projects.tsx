@@ -157,7 +157,7 @@ const Projects = () => {
       colors: ["#EC4899", "#F472B6", "#3B82F6"],
       delay: 0.4,
       githubLink: "https://github.com/sahilchawade04",
-      liveLink: "#"
+      liveLink: ""
     },
     {
       title: "Satellite Image Processing",
