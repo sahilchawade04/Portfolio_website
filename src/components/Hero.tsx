@@ -136,7 +136,7 @@ const Hero = () => {
               <div className="relative w-full h-full bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full p-1">
                 <div className="w-full h-full bg-background rounded-full p-2">
                   <motion.img
-                    src="/PHOTO.jpg"
+                    src="/Photo-1.jpg"
                     alt="Sahil Chawade"
                     className="w-full h-full object-cover rounded-full border-2 border-cyan-500/30 hover:border-cyan-400/50 transition-all duration-300"
                     whileHover={{ scale: 1.05 }}
